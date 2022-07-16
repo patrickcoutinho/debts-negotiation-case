@@ -1,21 +1,21 @@
 <mxfile host="65bd71144e">
-    <diagram id="vwwQ8WGMWeFYuftNzn4D" name="Page-1">
-        <mxGraphModel dx="1672" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <diagram id="vwwQ8WGMWeFYuftNzn4D" name="Existing Context">
+        <mxGraphModel dx="2466" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="8" style="edgeStyle=none;html=1;dashed=1;rounded=0;" parent="1" source="3" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="510" y="240" as="targetPoint"/>
+                        <mxPoint x="510" y="260" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="130" y="140"/>
-                            <mxPoint x="520" y="140"/>
+                            <mxPoint x="130" y="160"/>
+                            <mxPoint x="520" y="160"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <object placeholders="1" c4Name="Cliente" c4Type="Person" c4Description="Cliente do sistema de negociação" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="3">
                     <mxCell style="html=1;fontSize=11;dashed=0;whitespace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;rounded=0;" parent="1" vertex="1">
-                        <mxGeometry x="30" y="210" width="200" height="180" as="geometry"/>
+                        <mxGeometry x="30" y="230" width="200" height="180" as="geometry"/>
                     </mxCell>
                 </object>
                 <mxCell id="6" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;rounded=0;" parent="1" source="4" target="5" edge="1">
@@ -23,14 +23,14 @@
                 </mxCell>
                 <mxCell id="7" value="Recupera e envia&lt;br&gt;informações&lt;br style=&quot;font-size: 13px&quot;&gt;através de &lt;br&gt;processo batch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;rounded=0;" parent="6" vertex="1" connectable="0">
                     <mxGeometry x="-0.2125" relative="1" as="geometry">
-                        <mxPoint x="24" y="13" as="offset"/>
+                        <mxPoint x="14" y="-17" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="9" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;rounded=0;" parent="1" source="4" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="520" y="520"/>
-                            <mxPoint x="130" y="520"/>
+                            <mxPoint x="520" y="540"/>
+                            <mxPoint x="130" y="540"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -44,39 +44,44 @@
                 </mxCell>
                 <object placeholders="1" c4Name="Sistema de Negociação" c4Type="Sistema Monolítico" c4Description="Sistema que engloba multiplas responsabilidades" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="4">
                     <mxCell style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
-                        <mxGeometry x="400" y="270" width="240" height="120" as="geometry"/>
+                        <mxGeometry x="400" y="290" width="240" height="120" as="geometry"/>
                     </mxCell>
                 </object>
                 <mxCell id="17" style="edgeStyle=none;html=1;entryX=1.011;entryY=0.399;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;fontSize=13;rounded=0;" parent="1" source="5" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <object placeholders="1" c4Name="Informações sobre débidos" c4Type="Sistema Externo" c4Description="Sistema da instituição que provê informações sobre inadimplentes" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="5">
+                <object placeholders="1" c4Name="Sistema Corporativo" c4Type="Sistema Externo" c4Description="Sistema da instituição que provê informações sobre inadimplentes" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="5">
                     <mxCell style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
-                        <mxGeometry x="810" y="100" width="240" height="120" as="geometry"/>
+                        <mxGeometry x="810" y="120" width="240" height="120" as="geometry"/>
                     </mxCell>
                 </object>
                 <mxCell id="12" value="&lt;font style=&quot;font-size: 13px&quot;&gt;Realiza simulações de pagamento, agrupamento de dívidas,&lt;br&gt;efetivação de acordos, geração de boletos etc.&lt;/font&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];rounded=0;" parent="1" vertex="1" connectable="0">
-                    <mxGeometry x="150.0017647058819" y="170" as="geometry"/>
+                    <mxGeometry x="150.0017647058819" y="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" style="edgeStyle=none;html=1;entryX=1.011;entryY=0.879;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;fontSize=13;rounded=0;" parent="1" source="13" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <object placeholders="1" c4Name="Serasa, SPC, etc." c4Type="Bureaus de Crédito" c4Description="Sistemas externos de cadastro de inadimplentes" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="13">
                     <mxCell style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" parent="1" vertex="1">
-                        <mxGeometry x="810" y="440" width="240" height="120" as="geometry"/>
+                        <mxGeometry x="810" y="460" width="240" height="120" as="geometry"/>
                     </mxCell>
                 </object>
-                <mxCell id="16" value="Recupera e envia&lt;br&gt;informações&lt;br style=&quot;font-size: 13px&quot;&gt;através de &lt;br&gt;processo batch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;rounded=0;" parent="1" vertex="1" connectable="0">
-                    <mxGeometry x="730.003472726034" y="169.99761943646268" as="geometry">
+                <mxCell id="16" value="Recupera e envia&lt;br&gt;informações sobreNegativação&lt;br style=&quot;font-size: 13px&quot;&gt;através de&amp;nbsp;processo batch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;rounded=0;" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="780.003472726034" y="149.99761943646268" as="geometry">
                         <mxPoint x="-8" y="246" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="19" value="&lt;h2&gt;&lt;b&gt;Contexto&amp;nbsp; Existente&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=default;gradientColor=none;" vertex="1" parent="1">
                     <mxGeometry width="180" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="&lt;h2&gt;&lt;b&gt;Responsabilidades: Propostas, Acordos, Pagamentos, Cobrança, Negativação&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=none;gradientColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="205" y="680" width="690" height="50" as="geometry"/>
-                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="ZpD4vXsc4CfM9P1Jp46g" name="Proposed Context">
+        <mxGraphModel dx="2466" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="PGW7bnYjufuI6CpIWeMU-0"/>
+                <mxCell id="PGW7bnYjufuI6CpIWeMU-1" parent="PGW7bnYjufuI6CpIWeMU-0"/>
             </root>
         </mxGraphModel>
     </diagram>
