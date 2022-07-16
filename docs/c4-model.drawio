@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="vwwQ8WGMWeFYuftNzn4D" name="Existing Context">
-        <mxGraphModel dx="2466" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+        <mxGraphModel dx="1912" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -71,17 +71,102 @@
                         <mxPoint x="-8" y="246" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="19" value="&lt;h2&gt;&lt;b&gt;Contexto&amp;nbsp; Existente&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=default;gradientColor=none;" vertex="1" parent="1">
+                <mxCell id="19" value="&lt;h2&gt;&lt;b&gt;Contexto&amp;nbsp; Existente&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=default;gradientColor=none;" parent="1" vertex="1">
                     <mxGeometry width="180" height="50" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram id="ZpD4vXsc4CfM9P1Jp46g" name="Proposed Context">
-        <mxGraphModel dx="2466" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="1912" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="PGW7bnYjufuI6CpIWeMU-0"/>
                 <mxCell id="PGW7bnYjufuI6CpIWeMU-1" parent="PGW7bnYjufuI6CpIWeMU-0"/>
+                <mxCell id="natTUzhHQtPpCItLD6rM-0" style="edgeStyle=none;html=1;dashed=1;rounded=0;" edge="1" parent="PGW7bnYjufuI6CpIWeMU-1" source="natTUzhHQtPpCItLD6rM-1" target="natTUzhHQtPpCItLD6rM-5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="510" y="240" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="130" y="140"/>
+                            <mxPoint x="550" y="140"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <object placeholders="1" c4Name="Cliente" c4Type="Person" c4Description="Cliente do sistema de negociação" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="natTUzhHQtPpCItLD6rM-1">
+                    <mxCell style="html=1;fontSize=11;dashed=0;whitespace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;rounded=0;" vertex="1" parent="PGW7bnYjufuI6CpIWeMU-1">
+                        <mxGeometry x="30" y="335" width="200" height="180" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="natTUzhHQtPpCItLD6rM-2" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="PGW7bnYjufuI6CpIWeMU-1" source="natTUzhHQtPpCItLD6rM-5" target="natTUzhHQtPpCItLD6rM-14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="natTUzhHQtPpCItLD6rM-3" style="edgeStyle=none;html=1;entryX=-0.017;entryY=0.325;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="PGW7bnYjufuI6CpIWeMU-1" source="natTUzhHQtPpCItLD6rM-5" target="natTUzhHQtPpCItLD6rM-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="natTUzhHQtPpCItLD6rM-4" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="PGW7bnYjufuI6CpIWeMU-1" source="natTUzhHQtPpCItLD6rM-5" target="natTUzhHQtPpCItLD6rM-16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object placeholders="1" c4Name="Sistema de Negociação" c4Type="Micro services, Micro Front-ends" c4Description="Aplicação com responsabilidades distribuidas" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="natTUzhHQtPpCItLD6rM-5">
+                    <mxCell style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="PGW7bnYjufuI6CpIWeMU-1">
+                        <mxGeometry x="430" y="365" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="natTUzhHQtPpCItLD6rM-6" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="PGW7bnYjufuI6CpIWeMU-1" source="natTUzhHQtPpCItLD6rM-7" target="natTUzhHQtPpCItLD6rM-14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object placeholders="1" c4Name="Sistema Corporativo" c4Type="Sistema Externo" c4Description="Sistema da instituição que provê informações sobre inadimplentes" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="natTUzhHQtPpCItLD6rM-7">
+                    <mxCell style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="PGW7bnYjufuI6CpIWeMU-1">
+                        <mxGeometry x="820" y="90" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="natTUzhHQtPpCItLD6rM-8" value="&lt;font style=&quot;font-size: 13px&quot;&gt;Realiza simulações de pagamento, agrupamento de dívidas,&lt;br&gt;efetivação de acordos, geração de boletos etc.&lt;/font&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];rounded=0;" vertex="1" connectable="0" parent="PGW7bnYjufuI6CpIWeMU-1">
+                    <mxGeometry x="150.0017647058819" y="170" as="geometry"/>
+                </mxCell>
+                <object placeholders="1" c4Name="Serasa, SPC, etc." c4Type="Bureaus de Crédito" c4Description="Sistemas externos de cadastro de inadimplentes" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="natTUzhHQtPpCItLD6rM-9">
+                    <mxCell style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="PGW7bnYjufuI6CpIWeMU-1">
+                        <mxGeometry x="820" y="630" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="natTUzhHQtPpCItLD6rM-10" value="Troca de informações entre&lt;br&gt;Micro Services e Sistema Corporativo via&lt;br&gt;eventos Pub/Sub" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;rounded=0;" vertex="1" connectable="0" parent="PGW7bnYjufuI6CpIWeMU-1">
+                    <mxGeometry x="820.003472726034" y="39.997619436462685" as="geometry">
+                        <mxPoint x="-8" y="246" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="natTUzhHQtPpCItLD6rM-11" value="&lt;h2&gt;&lt;b&gt;Contexto&amp;nbsp; Proposto&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=default;gradientColor=none;" vertex="1" parent="PGW7bnYjufuI6CpIWeMU-1">
+                    <mxGeometry width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="natTUzhHQtPpCItLD6rM-12" style="edgeStyle=none;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" edge="1" parent="PGW7bnYjufuI6CpIWeMU-1" source="natTUzhHQtPpCItLD6rM-14" target="natTUzhHQtPpCItLD6rM-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="natTUzhHQtPpCItLD6rM-13" style="edgeStyle=none;html=1;entryX=0.342;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.338;exitY=-0.008;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" edge="1" parent="PGW7bnYjufuI6CpIWeMU-1" source="natTUzhHQtPpCItLD6rM-14" target="natTUzhHQtPpCItLD6rM-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="902" y="340" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <object placeholders="1" c4Name="Message Broker" c4Type="Sistema Externo" c4Description="Troca informações de forma assíncrona Pub/Sub" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="natTUzhHQtPpCItLD6rM-14">
+                    <mxCell style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="PGW7bnYjufuI6CpIWeMU-1">
+                        <mxGeometry x="820" y="365" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="natTUzhHQtPpCItLD6rM-15" style="edgeStyle=none;html=1;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="PGW7bnYjufuI6CpIWeMU-1" source="natTUzhHQtPpCItLD6rM-16" target="natTUzhHQtPpCItLD6rM-1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="130" y="690"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <object placeholders="1" c4Name="Serviços de Comunicação" c4Type="Sistema Externo" c4Description="Serviços responsáveis pelo envio de e-mail, SMS, Whatsapp, Push etc." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="natTUzhHQtPpCItLD6rM-16">
+                    <mxCell style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="PGW7bnYjufuI6CpIWeMU-1">
+                        <mxGeometry x="430" y="630" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="natTUzhHQtPpCItLD6rM-17" value="Recupera e envia&lt;br&gt;informações sobre Negativação&lt;br style=&quot;font-size: 13px&quot;&gt;através de API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;rounded=0;" vertex="1" connectable="0" parent="PGW7bnYjufuI6CpIWeMU-1">
+                    <mxGeometry x="730.003472726034" y="319.9976194364627" as="geometry">
+                        <mxPoint x="-8" y="246" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="natTUzhHQtPpCItLD6rM-18" value="Realiza ações de cobrança com propostas de renegociação&lt;br&gt;&lt;div&gt;Envia com informações para pagamentos de acordos já efetivados&lt;/div&gt;&lt;div&gt;(E-mail, SMS, Push, Whatsapp)&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=13;rounded=0;" vertex="1" connectable="0" parent="PGW7bnYjufuI6CpIWeMU-1">
+                    <mxGeometry x="150.00222222222217" y="570" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
