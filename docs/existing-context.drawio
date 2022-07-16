@@ -74,6 +74,9 @@
                 <mxCell id="19" value="&lt;h2&gt;&lt;b&gt;Contexto&amp;nbsp; Existente&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=default;gradientColor=none;" vertex="1" parent="1">
                     <mxGeometry width="180" height="50" as="geometry"/>
                 </mxCell>
+                <mxCell id="20" value="&lt;h2&gt;&lt;b&gt;Responsabilidades: Propostas, Acordos, Pagamentos, Cobrança, Negativação&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="205" y="680" width="690" height="50" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
