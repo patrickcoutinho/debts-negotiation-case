@@ -386,7 +386,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="vk7wcygd5Zt2dsi3PIEX" name="Infra">
-        <mxGraphModel dx="2369" dy="939" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="1906" dy="939" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="F4xuDANb7OEfPWtLHM5M-0"/>
                 <mxCell id="F4xuDANb7OEfPWtLHM5M-1" parent="F4xuDANb7OEfPWtLHM5M-0"/>
