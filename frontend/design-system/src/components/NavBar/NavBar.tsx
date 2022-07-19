@@ -1,4 +1,6 @@
 import React, { ReactNode } from 'react';
+import Logo from '../../assets/logoipsum-logo.svg';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import {
   Box,
   Flex,
@@ -16,7 +18,6 @@ import {
   useColorModeValue,
   Stack,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 const Links = ['Ofertas', 'Acordos'];
 
@@ -50,7 +51,9 @@ export default function NavBar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box>DebtsFree</Box>
+            <Box>
+              <img src={Logo} alt="logo" />
+            </Box>
             <HStack
               as={'nav'}
               spacing={4}
