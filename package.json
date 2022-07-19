@@ -4,5 +4,15 @@
   "main": "index.js",
   "repository": "git@github.com:patrickcoutinho/debts-negotiation-case.git",
   "author": "Patrick Coutinho <patrick@istyle.com.br>",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "typescript": "^4.7.4"
+  }
 }
