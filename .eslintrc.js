@@ -29,6 +29,7 @@ module.exports = {
     'linebreak-style': 'off',
     'quotes': ['error', 'single', { 'avoidEscape': true }],
     '@typescript-eslint/no-non-null-assertion': 'off',
+    'import/no-extraneous-dependencies': false,
     'prettier/prettier': [
       'error',
       {
