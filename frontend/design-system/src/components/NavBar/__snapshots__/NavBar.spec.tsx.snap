@@ -31,7 +31,7 @@ exports[`App should render App correctly 1`] = `
         <div
           class="css-0"
         >
-          Logo
+          DebtsFree
         </div>
         <nav
           class="chakra-stack css-t14v28"
@@ -40,19 +40,13 @@ exports[`App should render App correctly 1`] = `
             class="chakra-link css-1hol3b3"
             href="#"
           >
-            Dashboard
+            Ofertas
           </a>
           <a
             class="chakra-link css-1hol3b3"
             href="#"
           >
-            Projects
-          </a>
-          <a
-            class="chakra-link css-1hol3b3"
-            href="#"
-          >
-            Team
+            Acordos
           </a>
         </nav>
       </div>
