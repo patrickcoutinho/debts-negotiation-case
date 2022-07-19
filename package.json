@@ -10,6 +10,8 @@
     "frontend/*"
   ],
   "scripts": {
+    "start:offer": "yarn workspace offer start",
+    "start:design-system": "yarn workspace design-system start",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "lint": "tsc --noEmit && eslint \"**/*.{ts,tsx}\"",
     "test": "jest"
