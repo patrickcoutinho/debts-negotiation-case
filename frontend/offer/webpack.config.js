@@ -1,5 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const ModuleFederationPlugin =
   require('webpack').container.ModuleFederationPlugin;
@@ -68,6 +69,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
+    }),
+    new Dotenv({
+      systemvars: true,
     }),
   ],
 };
