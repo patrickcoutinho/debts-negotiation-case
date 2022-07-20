@@ -29,7 +29,6 @@ module.exports = {
   resolve: {
     extensions: ['.jsx', '.js', '.tsx', '.ts', '.json'],
   },
-
   module: {
     rules: [
       {
@@ -49,9 +48,14 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'offer',
+      name: 'design_system',
       filename: 'remoteEntry.js',
-      exposes: {},
+      exposes: {
+        './Navbar': './src/components/navbar/navbar',
+        './Footer': './src/components/footer/footer',
+        './Page': './src/components/page/page',
+        './ChakraProvider': './src/components/chakra-provider/chakra-provider',
+      },
       shared: {
         react: {
           singleton: true,
@@ -61,9 +65,10 @@ module.exports = {
           singleton: true,
           requiredVersion: deps['react-dom'],
         },
-      },
-      remotes: {
-        design_system: 'design_system@http://localhost:8081/remoteEntry.js',
+        '@chakra-ui/react': {
+          singleton: true,
+          requiredVersion: deps['@chakra-ui/react'],
+        },
       },
     }),
     new HtmlWebpackPlugin({

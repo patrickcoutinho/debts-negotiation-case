@@ -1,10 +1,12 @@
 import React, { FC } from 'react';
+import RemoteNavbar from 'design_system/Navbar';
+import ChakraProvider from 'design_system/ChakraProvider';
 
 const App: FC = () => {
   return (
-    <>
-      <div>Offer</div>
-    </>
+    <ChakraProvider>
+      <RemoteNavbar />
+    </ChakraProvider>
   );
 };
 
