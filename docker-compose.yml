@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  design-system:
+    build:
+      context: ./frontend/design-system/
+      target: "base"
+    command: sh -c "yarn && yarn dev"
+    container_name: design-system
+    ports:
+      - 8081:8081
+    volumes:
+      - ${PWD}/frontend/design-system:/app
+      - ${PWD}/tsconfig.json:/app/tsconfig.json
+      - ${PWD}/jest.config.ts:/app/jest.config.ts
+    privileged: true
+  offer:
+    build:
+      context: ./frontend/offer/
+      target: "base"
+    command: sh -c "yarn && yarn dev"
+    container_name: offer
+    ports:
+      - 8080:8080
+    volumes:
+      - ${PWD}/frontend/offer:/app
+      - ${PWD}/tsconfig.json:/app/tsconfig.json
+      - ${PWD}/jest.config.ts:/app/jest.config.ts
+    privileged: true
+
+networks:
+  case-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
