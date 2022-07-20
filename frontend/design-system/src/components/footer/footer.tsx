@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from '../../assets/logoipsum-logo.svg';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { Logo } from '..';
 import { ReactNode } from 'react';
 import {
   Box,
@@ -59,7 +59,7 @@ export default function Footer() {
         justify={'center'}
         align={'center'}
       >
-        <img src={Logo} alt="logo" />
+        <Logo alt="Logoipsum" />
         <Stack direction={'row'} spacing={6}>
           <Link href={'#'}>Home</Link>
           <Link href={'#'}>About</Link>

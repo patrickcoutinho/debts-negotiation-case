@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
-import Logo from '../../assets/logoipsum-logo.svg';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { Logo } from '..';
 import {
   Box,
   Flex,
@@ -52,7 +52,7 @@ export default function Navbar() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <img src={Logo} alt="logo" />
+              <Logo alt="Logoipsum" />
             </Box>
             <HStack
               as={'nav'}
