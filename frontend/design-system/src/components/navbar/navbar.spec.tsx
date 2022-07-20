@@ -3,7 +3,7 @@ import Navbar from './navbar';
 import { render } from '@testing-library/react';
 
 describe('Navbar', () => {
-  test('should render App correctly', () => {
+  test('should render Navbar correctly', () => {
     const { container } = render(<Navbar />);
 
     expect(container).toMatchSnapshot();
