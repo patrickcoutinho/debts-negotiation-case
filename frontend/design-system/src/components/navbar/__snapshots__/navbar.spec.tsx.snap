@@ -140,7 +140,7 @@ exports[`App should render App correctly 1`] = `
 </div>
 `;
 
-exports[`NavBar should render App correctly 1`] = `
+exports[`Navbar should render App correctly 1`] = `
 <div>
   <div
     class="css-1m65r4j"

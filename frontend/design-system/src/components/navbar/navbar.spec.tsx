@@ -1,10 +1,10 @@
 import React from 'react';
-import NavBar from './NavBar';
+import Navbar from './navbar';
 import { render } from '@testing-library/react';
 
-describe('NavBar', () => {
+describe('Navbar', () => {
   test('should render App correctly', () => {
-    const { container } = render(<NavBar />);
+    const { container } = render(<Navbar />);
 
     expect(container).toMatchSnapshot();
   });
