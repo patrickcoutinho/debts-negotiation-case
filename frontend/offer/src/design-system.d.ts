@@ -7,7 +7,7 @@ declare module 'design_system/Navbar' {
 }
 
 declare module 'design_system/ChakraProvider' {
-  const ChakraProvider: React.ComponentType;
+  function ChakraProvider({ children }: any): any;
 
   export default ChakraProvider;
 }
