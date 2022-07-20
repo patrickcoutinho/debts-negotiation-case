@@ -52,6 +52,8 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         './Navbar': './src/components/navbar/navbar',
+        './Footer': './src/components/footer/footer',
+        './Page': './src/components/page/page',
         './ChakraProvider': './src/components/chakra-provider/chakra-provider',
       },
       shared: {
