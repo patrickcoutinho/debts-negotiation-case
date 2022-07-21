@@ -36,7 +36,7 @@ describe('RemoteGetOffers', () => {
           original: 123.0,
         },
         date: new Date(),
-        contact: '12345677890',
+        contract: '12345677890',
         description: '',
         installmentPlans: [],
         type: DebtType.creditCard,
