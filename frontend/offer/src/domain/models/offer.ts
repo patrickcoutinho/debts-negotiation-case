@@ -17,7 +17,7 @@ export type OfferModel = {
     actual: number;
   };
   date: Date;
-  contact: string;
+  contract: string;
   type: DebtType;
   description: string | null;
   installmentPlans: InstallmentPlan[];
