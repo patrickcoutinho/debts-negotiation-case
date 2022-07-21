@@ -11,11 +11,47 @@ export class RemoteGetOffers implements GetOffers {
   }
 
   public get = async (): Promise<GetOffers.Model[]> => {
-    const response = await this.httpClient.request({
-      url: this.api,
-      method: 'get',
-    });
+    // const response = await this.httpClient.request({
+    //   url: this.api,
+    //   method: 'get',
+    // });
 
-    return response.body;
+    // return response.body;
+
+    return [
+      {
+        value: {
+          actual: 123.0,
+          original: 123.0,
+        },
+        date: new Date(),
+        contact: '12345677890',
+        description: '',
+        installmentPlans: [],
+        type: DebtType.creditCard,
+      },
+      {
+        value: {
+          actual: 123.0,
+          original: 123.0,
+        },
+        date: new Date(),
+        contact: '12345677890',
+        description: '',
+        installmentPlans: [],
+        type: DebtType.creditCard,
+      },
+      {
+        value: {
+          actual: 123.0,
+          original: 123.0,
+        },
+        date: new Date(),
+        contact: '12345677890',
+        description: '',
+        installmentPlans: [],
+        type: DebtType.creditCard,
+      },
+    ];
   };
 }
