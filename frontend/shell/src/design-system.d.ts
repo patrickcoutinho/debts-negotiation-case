@@ -7,7 +7,7 @@ declare module 'design_system/Button' {
 }
 
 declare module 'design_system/Navbar' {
-  const Navbar: React.ComponentType;
+  const Navbar: React.ComponentType<any>;
 
   export default Navbar;
 }

@@ -4,13 +4,19 @@ import Ofertas from './pages/ofertas';
 import RemoteFooter from 'design_system/Footer';
 import RemoteNavbar from 'design_system/Navbar';
 import { Link, Routes, Route } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const App: FC = () => {
+  const navigate = useNavigate();
+
   return (
     <>
-      <RemoteNavbar />
-      <Link to="/">Home</Link>
-      <Link to="/ofertas">Ofertas</Link>
+      <RemoteNavbar
+        links={[
+          { text: 'Home', action: () => navigate('/') },
+          { text: 'Ofertas', action: () => navigate('/ofertas') },
+        ]}
+      />
 
       <Routes>
         <Route path="/" element={<Index />} />

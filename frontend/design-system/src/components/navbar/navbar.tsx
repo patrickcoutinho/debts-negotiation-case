@@ -19,9 +19,23 @@ import {
   Stack,
 } from '@chakra-ui/react';
 
-const Links = ['Ofertas', 'Acordos'];
+type NavbarLinkType = {
+  text: string;
+  action: () => {};
+};
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+type NavbarProps = {
+  links: NavbarLinkType[];
+  onClick: () => void;
+};
+
+const NavLink = ({
+  children,
+  onClick,
+}: {
+  children: ReactNode;
+  onClick: () => void;
+}) => (
   <Link
     px={2}
     py={1}
@@ -31,12 +45,16 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
     href={'#'}
+    onClick={(e) => {
+      e.preventDefault();
+      onClick();
+    }}
   >
     {children}
   </Link>
 );
 
-export default function Navbar() {
+export default function Navbar({ links }: NavbarProps) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -59,8 +77,10 @@ export default function Navbar() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}
             >
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {links.map((link, key) => (
+                <NavLink key={key} onClick={link.action}>
+                  {link.text}
+                </NavLink>
               ))}
             </HStack>
           </HStack>
@@ -93,8 +113,10 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {links.map((link, key) => (
+                <NavLink key={key} onClick={link.action}>
+                  {link.text}
+                </NavLink>
               ))}
             </Stack>
           </Box>
