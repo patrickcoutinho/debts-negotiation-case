@@ -26,8 +26,9 @@ const GetOffersPage: FC<GetOffersPageProps> = ({ getOffers }) => {
     <Page
       heading="Confira suas ofertas"
       text="Você tem oportunidades para renegociar seus débitos, confira abaixo:"
-      content={offers.map((offer) => (
+      content={offers.map((offer, key) => (
         <OfferCard
+          key={key}
           value={offer.value}
           type={offer.type}
           discount={offer.installmentPlans[0].discount}
