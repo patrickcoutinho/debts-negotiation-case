@@ -11,7 +11,7 @@
     "shared/*"
   ],
   "scripts": {
-    "start": "concurrently \"yarn workspace offer dev\" \"yarn workspace design-system dev\" \"yarn workspace design-system storybook\"",
+    "start": "concurrently \"yarn workspace shell dev\" \"yarn workspace offer dev\" \"yarn workspace design-system dev\" \"yarn workspace design-system storybook\"",
     "start:offer": "yarn workspace offer start",
     "start:design-system": "yarn workspace design-system start",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
