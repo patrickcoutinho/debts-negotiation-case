@@ -52,19 +52,19 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'offer',
       filename: 'remoteEntry.js',
-      exposes: {},
-      shared: {
-        react: {
-          singleton: true,
-          requiredVersion: deps.react,
-        },
-        'react-dom': {
-          singleton: true,
-          requiredVersion: deps['react-dom'],
-        },
+      exposes: {
+        './GetOffers': './src/presentation/get-offers/get-offers-factory.tsx',
       },
       remotes: {
         design_system: 'design_system@http://localhost:8081/remoteEntry.js',
+      },
+      shared: {
+        react: {
+          requiredVersion: deps.react,
+        },
+        'react-dom': {
+          requiredVersion: deps['react-dom'],
+        },
       },
     }),
     new HtmlWebpackPlugin({

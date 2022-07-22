@@ -59,17 +59,17 @@ module.exports = {
         './OfferCard': './src/components/offer-card/offer-card',
         './Page': './src/components/page/page',
       },
+      remotes: {
+        offer: 'offer@http://localhost:8080/remoteEntry.js',
+      },
       shared: {
         react: {
-          singleton: true,
           requiredVersion: deps.react,
         },
         'react-dom': {
-          singleton: true,
           requiredVersion: deps['react-dom'],
         },
         '@chakra-ui/react': {
-          singleton: true,
           requiredVersion: deps['@chakra-ui/react'],
         },
       },
