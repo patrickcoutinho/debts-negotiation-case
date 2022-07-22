@@ -1,5 +1,6 @@
 // @ts-nocheck
 import 'jest-axe/extend-expect';
+import '@testing-library/jest-dom';
 
 global.window = Object.create(window);
 
