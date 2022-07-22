@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal should render Modal correctly 1`] = `
+<div>
+  <button
+    class="chakra-button css-63eb9s"
+    type="button"
+  >
+    Open
+  </button>
+</div>
+`;
