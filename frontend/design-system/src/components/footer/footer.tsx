@@ -59,7 +59,7 @@ export default function Footer() {
         justify={'center'}
         align={'center'}
       >
-        <Logo alt="Logoipsum" />
+        <Logo alt="DebtsFree" maxH={26} />
         <Stack direction={'row'} spacing={6}>
           <Link href={'#'}>Home</Link>
           <Link href={'#'}>About</Link>

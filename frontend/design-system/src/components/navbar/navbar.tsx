@@ -52,7 +52,7 @@ export default function Navbar() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <Logo alt="Logoipsum" />
+              <Logo alt="Logoipsum" maxH={30} />
             </Box>
             <HStack
               as={'nav'}
