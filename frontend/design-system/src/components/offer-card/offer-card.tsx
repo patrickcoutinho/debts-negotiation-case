@@ -57,9 +57,7 @@ const OfferCard: FC<any> = ({
           >
             {type}
           </Text>
-          <Text fontSize={'2x'}>
-            de R$ {formatCurrency(value.original)} por
-          </Text>
+          <Text fontSize={'2x'}>de {formatCurrency(value.original)} por</Text>
           <Stack direction={'row'} align={'center'} justify={'center'}>
             <Text fontSize={'4xl'} fontWeight={800}>
               {formatCurrency(value.actual)}
