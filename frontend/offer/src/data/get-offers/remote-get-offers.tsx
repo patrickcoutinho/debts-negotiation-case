@@ -1,5 +1,5 @@
-import { DebtType } from '../../domain/models/offer';
 import { GetOffers } from '../../domain/usecases/get-offers';
+import { getOffersResponseMock } from '../../utils/api-mock';
 import { HttpClient } from '@shared/infra';
 
 export class RemoteGetOffers implements GetOffers {
@@ -11,47 +11,17 @@ export class RemoteGetOffers implements GetOffers {
   }
 
   public get = async (): Promise<GetOffers.Model[]> => {
-    // const response = await this.httpClient.request({
-    //   url: this.api,
-    //   method: 'get',
-    // });
+    return Promise.resolve(getOffersResponseMock);
 
-    // return response.body;
+    try {
+      const response = await this.httpClient.request({
+        url: this.api,
+        method: 'get',
+      });
 
-    return [
-      {
-        value: {
-          actual: 123.0,
-          original: 123.0,
-        },
-        date: new Date(),
-        contract: '12345677890',
-        description: '',
-        installmentPlans: [],
-        type: DebtType.creditCard,
-      },
-      {
-        value: {
-          actual: 123.0,
-          original: 123.0,
-        },
-        date: new Date(),
-        contract: '12345677890',
-        description: '',
-        installmentPlans: [],
-        type: DebtType.creditCard,
-      },
-      {
-        value: {
-          actual: 123.0,
-          original: 123.0,
-        },
-        date: new Date(),
-        contract: '12345677890',
-        description: '',
-        installmentPlans: [],
-        type: DebtType.creditCard,
-      },
-    ];
+      return response.body;
+    } catch (error) {
+      console.log(error);
+    }
   };
 }
