@@ -2,21 +2,21 @@ import React, { ReactNode } from 'react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Logo } from '..';
 import {
-  Box,
-  Flex,
   Avatar,
-  HStack,
-  Link,
-  IconButton,
+  Box,
   Button,
+  Flex,
+  HStack,
+  IconButton,
+  Link,
   Menu,
   MenuButton,
-  MenuList,
-  MenuItem,
   MenuDivider,
-  useDisclosure,
-  useColorModeValue,
+  MenuItem,
+  MenuList,
   Stack,
+  useColorModeValue,
+  useDisclosure,
 } from '@chakra-ui/react';
 
 type NavbarLinkType = {
@@ -70,7 +70,7 @@ export default function Navbar({ links }: NavbarProps) {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <Logo alt="Logoipsum" maxH={30} />
+              <Logo alt="DebtsFree" maxH={30} />
             </Box>
             <HStack
               as={'nav'}
