@@ -51,10 +51,13 @@ module.exports = {
       name: 'design_system',
       filename: 'remoteEntry.js',
       exposes: {
+        './Accordion': './src/components/accordion/accordion',
         './Button': './src/components/button/button',
         './ButtonProps': './src/components/button/button',
         './ChakraProvider': './src/components/chakra-provider/chakra-provider',
         './Footer': './src/components/footer/footer',
+        './Logo': './src/components/logo/logo',
+        './Modal': './src/components/modal/modal',
         './Navbar': './src/components/navbar/navbar',
         './OfferCard': './src/components/offer-card/offer-card',
         './Page': './src/components/page/page',
