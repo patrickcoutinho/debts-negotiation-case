@@ -10,7 +10,7 @@ export class RemoteGetOffers implements GetOffers {
     this.httpClient = httpClient;
   }
 
-  public get = async (): Promise<GetOffers.Model[]> => {
+  public get = async (): Promise<GetOffers.Model[] | undefined> => {
     return Promise.resolve(getOffersResponseMock);
 
     try {
@@ -19,7 +19,7 @@ export class RemoteGetOffers implements GetOffers {
         method: 'get',
       });
 
-      return response.body;
+      return response.body || undefined;
     } catch (error) {
       console.log(error);
     }

@@ -21,12 +21,11 @@ import {
 
 type NavbarLinkType = {
   text: string;
-  action: () => {};
+  action: () => void;
 };
 
 type NavbarProps = {
   links: NavbarLinkType[];
-  onClick: () => void;
 };
 
 const NavLink = ({
@@ -101,10 +100,9 @@ export default function Navbar({ links }: NavbarProps) {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
+                <MenuItem>Minha Conta</MenuItem>
                 <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
+                <MenuItem>Sair</MenuItem>
               </MenuList>
             </Menu>
           </Flex>

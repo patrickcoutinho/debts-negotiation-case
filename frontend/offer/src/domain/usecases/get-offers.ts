@@ -1,7 +1,7 @@
 import { OfferModel } from '../models/offer';
 
 export interface GetOffers {
-  get: () => Promise<GetOffers.Model[]>;
+  get: () => Promise<GetOffers.Model[] | undefined>;
 }
 
 export namespace GetOffers {

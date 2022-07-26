@@ -8,7 +8,7 @@ type GetOffersPageProps = {
 };
 
 const GetOffersPage: FC<GetOffersPageProps> = ({ getOffers }) => {
-  const [offers, setOffers] = useState<GetOffers.Model[] | []>([]);
+  const [offers, setOffers] = useState<GetOffers.Model[] | [] | undefined>([]);
 
   useEffect(() => {
     (async () => {
@@ -26,16 +26,19 @@ const GetOffersPage: FC<GetOffersPageProps> = ({ getOffers }) => {
     <Page
       heading="Confira suas ofertas"
       text="Você tem oportunidades para renegociar seus débitos, confira abaixo:"
-      content={offers.map((offer, key) => (
-        <OfferCard
-          key={key}
-          value={offer.value}
-          type={offer.type}
-          discount={offer.installmentPlans[0].discount}
-          installments={offer.installmentPlans[0].installments}
-          installmentValue={offer.installmentPlans[0].installmentValue}
-        />
-      ))}
+      content={
+        offers &&
+        offers.map((offer, key) => (
+          <OfferCard
+            key={key}
+            value={offer.value}
+            type={offer.type}
+            discount={offer.installmentPlans[0].discount}
+            installments={offer.installmentPlans[0].installments}
+            installmentValue={offer.installmentPlans[0].installmentValue}
+          />
+        ))
+      }
     />
   );
 };

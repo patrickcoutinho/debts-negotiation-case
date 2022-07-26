@@ -10,6 +10,7 @@ import {
   ModalOverlay,
   useDisclosure,
 } from '@chakra-ui/react';
+import { CheckIcon } from '@chakra-ui/icons';
 
 export type ModalProps = {
   title: string;
@@ -22,7 +23,9 @@ const Modal: FC<ModalProps> = ({ title, text, openButton }) => {
 
   return (
     <>
-      <Button onClick={onOpen}>{openButton}</Button>
+      <Button variant={'outline'} onClick={onOpen}>
+        {openButton}
+      </Button>
 
       <Base isOpen={isOpen} onClose={onClose} size={'4xl'}>
         <ModalOverlay />
@@ -34,6 +37,9 @@ const Modal: FC<ModalProps> = ({ title, text, openButton }) => {
           <ModalFooter>
             <Button variant="ghost" mr={3} onClick={onClose}>
               Fechar
+            </Button>
+            <Button rightIcon={<CheckIcon />} ml={3}>
+              Selecionar Oferta
             </Button>
           </ModalFooter>
         </ModalContent>
