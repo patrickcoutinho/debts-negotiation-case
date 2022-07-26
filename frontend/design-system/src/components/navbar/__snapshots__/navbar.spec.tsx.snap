@@ -32,7 +32,8 @@ exports[`Navbar should render Navbar correctly 1`] = `
           class="css-0"
         >
           <img
-            alt="Logoipsum"
+            alt="DebtsFree"
+            class="chakra-image css-hs242n"
             src="test-file-stub"
           />
         </div>
@@ -43,13 +44,7 @@ exports[`Navbar should render Navbar correctly 1`] = `
             class="chakra-link css-1hol3b3"
             href="#"
           >
-            Ofertas
-          </a>
-          <a
-            class="chakra-link css-1hol3b3"
-            href="#"
-          >
-            Acordos
+            archive
           </a>
         </nav>
       </div>
@@ -108,17 +103,7 @@ exports[`Navbar should render Navbar correctly 1`] = `
               tabindex="-1"
               type="button"
             >
-              Link 1
-            </button>
-            <button
-              class="chakra-menu__menuitem css-1k756t9"
-              data-index="1"
-              id="menu-list-:r2:-menuitem-:r4:"
-              role="menuitem"
-              tabindex="-1"
-              type="button"
-            >
-              Link 2
+              Minha Conta
             </button>
             <hr
               aria-orientation="horizontal"
@@ -127,13 +112,13 @@ exports[`Navbar should render Navbar correctly 1`] = `
             />
             <button
               class="chakra-menu__menuitem css-1k756t9"
-              data-index="2"
-              id="menu-list-:r2:-menuitem-:r5:"
+              data-index="1"
+              id="menu-list-:r2:-menuitem-:r4:"
               role="menuitem"
               tabindex="-1"
               type="button"
             >
-              Link 3
+              Sair
             </button>
           </div>
         </div>

@@ -47,7 +47,6 @@ describe('RemoteGetOffers', () => {
 
     const response = await subject.get();
 
-    expect(response.length).toBe(mockResponse.length);
     expect(response).toEqual(mockResponse);
   });
 });
