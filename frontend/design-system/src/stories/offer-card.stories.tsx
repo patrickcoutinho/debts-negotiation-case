@@ -19,6 +19,8 @@ Default.args = {
     actual: 1276.99,
   },
   type: 'Cartão de Crédito',
+  contract: 'abcd123',
+  description: 'test description',
   discount: 90,
   installments: 24,
   installmentValue: 123,
