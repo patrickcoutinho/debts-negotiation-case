@@ -1,7 +1,7 @@
 /// <reference types="react" />
 
 declare module 'design_system/Button' {
-  const Button: React.ComponentType;
+  const Button: React.ComponentType<any>;
 
   export default Button;
 }
@@ -24,10 +24,10 @@ declare module 'design_system/Page' {
   export default Page;
 }
 
-declare module 'design_system/OfferCard' {
-  const OfferCard: React.ComponentType<any>;
+declare module 'design_system/Modal' {
+  const Modal: React.ComponentType<any>;
 
-  export default OfferCard;
+  export default Modal;
 }
 
 declare module 'design_system/ChakraProvider' {

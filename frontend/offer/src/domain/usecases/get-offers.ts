@@ -1,4 +1,4 @@
-import { OfferModel } from '../models/offer';
+import { InstallmentPlan, OfferModel } from '../models/offer';
 
 export interface GetOffers {
   get: () => Promise<GetOffers.Model[] | undefined>;
@@ -6,4 +6,5 @@ export interface GetOffers {
 
 export namespace GetOffers {
   export type Model = OfferModel;
+  export type Plan = InstallmentPlan;
 }

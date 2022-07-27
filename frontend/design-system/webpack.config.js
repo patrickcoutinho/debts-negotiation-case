@@ -59,7 +59,6 @@ module.exports = {
         './Logo': './src/components/logo/logo',
         './Modal': './src/components/modal/modal',
         './Navbar': './src/components/navbar/navbar',
-        './OfferCard': './src/components/offer-card/offer-card',
         './Page': './src/components/page/page',
       },
       remotes: {
