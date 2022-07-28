@@ -59,7 +59,7 @@ export default function Footer() {
         justify={'center'}
         align={'center'}
       >
-        <Logo alt="Logoipsum" />
+        <Logo alt="DebtsFree" maxH={26} />
         <Stack direction={'row'} spacing={6}>
           <Link href={'#'}>Home</Link>
           <Link href={'#'}>About</Link>
@@ -82,7 +82,7 @@ export default function Footer() {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}
         >
-          <Text>© 2022 Logoipsum. All rights reserved</Text>
+          <Text>© 2022 DebtsFree. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />

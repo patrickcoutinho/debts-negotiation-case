@@ -51,22 +51,27 @@ module.exports = {
       name: 'design_system',
       filename: 'remoteEntry.js',
       exposes: {
-        './Navbar': './src/components/navbar/navbar',
-        './Footer': './src/components/footer/footer',
-        './Page': './src/components/page/page',
+        './Button': './src/components/button/button',
+        './ButtonProps': './src/components/button/button',
         './ChakraProvider': './src/components/chakra-provider/chakra-provider',
+        './Footer': './src/components/footer/footer',
+        './Logo': './src/components/logo/logo',
+        './Modal': './src/components/modal/modal',
+        './Navbar': './src/components/navbar/navbar',
+        './Page': './src/components/page/page',
+      },
+      remotes: {
+        offer: 'offer@http://localhost:8080/remoteEntry.js',
       },
       shared: {
+        ...deps,
         react: {
-          singleton: true,
           requiredVersion: deps.react,
         },
         'react-dom': {
-          singleton: true,
           requiredVersion: deps['react-dom'],
         },
         '@chakra-ui/react': {
-          singleton: true,
           requiredVersion: deps['@chakra-ui/react'],
         },
       },

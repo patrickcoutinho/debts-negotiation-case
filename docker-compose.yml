@@ -26,8 +26,46 @@ services:
       - ${PWD}/frontend/offer:/app
       - ${PWD}/tsconfig.json:/app/tsconfig.json
       - ${PWD}/jest.config.ts:/app/jest.config.ts
+      - ${PWD}/../../shared/infra:/app/infra
     privileged: true
-
+  shell:
+    build:
+      context: ./frontend/shell/
+      target: "base"
+    command: sh -c "yarn && yarn dev"
+    container_name: shell
+    ports:
+      - 3000:3000
+    volumes:
+      - ${PWD}/frontend/shell:/app
+      - ${PWD}/tsconfig.json:/app/tsconfig.json
+      - ${PWD}/jest.config.ts:/app/jest.config.ts
+    privileged: true
+  home:
+    build:
+      context: ./frontend/home/
+      target: "base"
+    command: sh -c "yarn && yarn dev"
+    container_name: home
+    ports:
+      - 8082:8082
+    volumes:
+      - ${PWD}/frontend/home:/app
+      - ${PWD}/tsconfig.json:/app/tsconfig.json
+      - ${PWD}/jest.config.ts:/app/jest.config.ts
+    privileged: true
+  shared-infra:
+    build:
+      context: ./shared/infra/
+      target: "base"
+    command: sh -c "yarn && yarn dev"
+    container_name: shared-infra
+    ports:
+      - 8083:8083
+    volumes:
+      - ${PWD}/shared/infra:/app
+      - ${PWD}/tsconfig.json:/app/tsconfig.json
+    privileged: true
 networks:
   case-net:
     driver: bridge
