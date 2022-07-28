@@ -51,7 +51,6 @@ module.exports = {
       name: 'design_system',
       filename: 'remoteEntry.js',
       exposes: {
-        './Accordion': './src/components/accordion/accordion',
         './Button': './src/components/button/button',
         './ButtonProps': './src/components/button/button',
         './ChakraProvider': './src/components/chakra-provider/chakra-provider',
