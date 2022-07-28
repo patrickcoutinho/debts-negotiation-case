@@ -11,7 +11,7 @@ const Page: FC<any> = ({ content, heading, text }: PageProps) => (
   <Container maxW="980px">
     <Box textAlign={'center'}>
       {heading && (
-        <Heading size={'xl'} as={'h1'} mb={5} mt={5}>
+        <Heading size={'xl'} as={'h1'} mb={10} mt={10}>
           {heading}
         </Heading>
       )}

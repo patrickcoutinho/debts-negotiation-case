@@ -2,7 +2,6 @@ import React, { FC, useEffect, useState } from 'react';
 import Page from 'design_system/Page';
 import OfferCard from '../offer-card/offer-card';
 import { GetOffers } from '../../domain/usecases/get-offers';
-import SelectedOffers from '../components/selected-offers/selected-offers';
 
 type GetOffersPageProps = {
   getOffers: GetOffers;
@@ -25,7 +24,6 @@ const GetOffersPage: FC<GetOffersPageProps> = ({ getOffers }) => {
 
   return (
     <>
-      <SelectedOffers />
       <Page
         heading="Confira suas ofertas"
         text="Você tem oportunidades para renegociar seus débitos, confira abaixo:"

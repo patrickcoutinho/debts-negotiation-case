@@ -4,10 +4,24 @@ import { ArrowRightIcon } from '@chakra-ui/icons';
 import { Box, ButtonGroup } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import { useStore } from 'shell/store';
+import { Agreement } from '../../../domain/usecases/agreement';
 
-const SelectedOffers = () => {
+type SelectedOffersProps = {
+  agreementService: Agreement;
+};
+
+const SelectedOffers = ({ agreementService }: SelectedOffersProps) => {
   const navigate = useNavigate();
-  const { length } = useStore();
+  const { value, length } = useStore();
+
+  const handleContinue = async () => {
+    try {
+      await agreementService.post(Object.values(value as Object));
+      navigate('/checkout');
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <Box
@@ -28,7 +42,7 @@ const SelectedOffers = () => {
               m={0}
               colorScheme="teal"
               rightIcon={<ArrowRightIcon />}
-              onClick={() => navigate('/checkout')}
+              onClick={handleContinue}
             >{`Prosseguir com ${length} oferta${
               length > 1 ? 's' : ''
             }`}</Button>

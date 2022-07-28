@@ -1,8 +1,10 @@
 import { DebtType } from '../domain/models/offer';
 import { GetOffers } from '../domain/usecases/get-offers';
 import { faker } from '@faker-js/faker';
+import { Agreement } from '../domain/usecases/agreement';
+import { AgreementStatus } from '../domain/models/agreement';
 
-const item = {
+const offerItem: GetOffers.Model = {
   id: faker.datatype.uuid(),
   type: DebtType.creditCard,
   contract: '12345677890',
@@ -34,7 +36,22 @@ const item = {
     },
   ],
 };
+
 export const getOffersResponseMock: GetOffers.Model[] = [
-  item,
-  { ...item, id: faker.datatype.uuid() },
+  offerItem,
+  { ...offerItem, id: faker.datatype.uuid() },
 ];
+
+export const agreementMock: Agreement.Model = {
+  id: faker.datatype.uuid(),
+  createdDate: new Date(),
+  installmentsPlan: offerItem.installmentPlans,
+  dueDate: [
+    faker.date.future(),
+    faker.date.future(),
+    faker.date.future(),
+    faker.date.future(),
+  ],
+  offers: getOffersResponseMock,
+  status: AgreementStatus.simulation,
+};

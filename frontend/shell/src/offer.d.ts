@@ -5,3 +5,9 @@ declare module 'offer/GetOffers' {
 
   export default GetOffers;
 }
+
+declare module 'offer/Checkout' {
+  const Checkout: React.ComponentType;
+
+  export default Checkout;
+}

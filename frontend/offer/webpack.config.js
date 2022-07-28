@@ -54,7 +54,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         './GetOffers': './src/presentation/get-offers/get-offers-factory.tsx',
-        './Checkout': './src/presentation/checkout/checkout.tsx',
+        './Checkout': './src/presentation/checkout/checkout-factory.tsx',
       },
       remotes: {
         design_system: 'design_system@http://localhost:8081/remoteEntry.js',
