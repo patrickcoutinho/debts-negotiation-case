@@ -50,15 +50,13 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'shell',
+      name: 'home',
       filename: 'remoteEntry.js',
       remotes: {
-        offer: 'offer@http://localhost:8080/remoteEntry.js',
         design_system: 'design_system@http://localhost:8081/remoteEntry.js',
-        home: 'home@http://localhost:8082/remoteEntry.js',
       },
       exposes: {
-        './store': './src/store/index',
+        './Home': './src/components/home.tsx',
       },
       shared: {
         ...deps,
