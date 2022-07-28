@@ -12,6 +12,7 @@ export type InstallmentPlan = {
 };
 
 export type OfferModel = {
+  id: string;
   value: {
     original: number;
     actual: number;

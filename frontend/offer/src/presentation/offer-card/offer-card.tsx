@@ -17,6 +17,8 @@ import {
   Divider,
 } from '@chakra-ui/react';
 
+import { useStore } from 'shell/store';
+
 const formatCurrency = (value: number) =>
   value.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
 
@@ -29,6 +31,7 @@ const maxDiscount = (installmentPlans: GetOffers.Plan[]) =>
   Math.max(...installmentPlans.map((plan) => plan.discount));
 
 const OfferCard: FC<GetOffers.Model> = ({
+  id,
   value,
   date,
   type,
@@ -36,8 +39,21 @@ const OfferCard: FC<GetOffers.Model> = ({
   description,
   installmentPlans,
 }) => {
+  const { value: state, add } = useStore();
+
+  console.log('selected', state);
+
   const maxPlan = maxInstallments(installmentPlans);
   const maxPlanDiscount = maxDiscount(installmentPlans);
+
+  const handleSelect = () => {
+    console.log('add', add);
+    if (state[id]) {
+      return;
+    }
+
+    add(id);
+  };
 
   return (
     <ChakraProvider>
@@ -163,8 +179,8 @@ const OfferCard: FC<GetOffers.Model> = ({
                     </Heading>
                     <List spacing={3}>
                       {installmentPlans &&
-                        installmentPlans.map((plan) => (
-                          <ListItem>
+                        installmentPlans.map((plan, key) => (
+                          <ListItem key={key}>
                             <ListIcon as={CheckCircleIcon} color="teal.500" />
                             <strong>{plan.installments}x</strong> de{' '}
                             <strong>
@@ -181,8 +197,13 @@ const OfferCard: FC<GetOffers.Model> = ({
               }
             />
 
-            <Button rightIcon={<CheckIcon />} ml={3}>
-              Selecionar Oferta
+            <Button
+              rightIcon={<CheckIcon />}
+              ml={3}
+              onClick={handleSelect}
+              disabled={state[id]}
+            >
+              {state[id] ? 'Selecionada' : 'Selecionar Oferta'}
             </Button>
           </Box>
         </Box>

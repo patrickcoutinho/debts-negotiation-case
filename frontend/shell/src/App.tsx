@@ -3,7 +3,7 @@ import Index from './pages';
 import Ofertas from './pages/ofertas';
 import RemoteFooter from 'design_system/Footer';
 import RemoteNavbar from 'design_system/Navbar';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 const App: FC = () => {

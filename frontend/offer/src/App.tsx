@@ -8,7 +8,7 @@ import { FetchHttpClient } from '@shared/infra';
 const App: FC = () => {
   return (
     <>
-      <RemoteNavbar />
+      <RemoteNavbar links={[{ text: 'teste', action: () => {} }]} />
       <GetOffersPage getOffers={new RemoteGetOffers(new FetchHttpClient())} />
       <RemoteFooter />
     </>

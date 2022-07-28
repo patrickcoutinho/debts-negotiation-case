@@ -31,6 +31,7 @@ describe('RemoteGetOffers', () => {
   test('should get offers', async () => {
     const mockResponse: GetOffers.Model[] = [
       {
+        id: '123acc',
         value: {
           actual: 123.0,
           original: 123.0,
