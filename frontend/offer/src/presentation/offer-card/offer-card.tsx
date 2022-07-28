@@ -110,6 +110,9 @@ const OfferCard: FC<GetOffers.Model> = ({
             <Modal
               openButton="Detalhes da Oferta"
               title="Detalhes da Oferta"
+              button={state[id] ? 'Selecionada' : 'Selecionar Oferta'}
+              buttonAction={handleSelect}
+              buttonDisabled={!!state[id]}
               text={
                 <>
                   <Stack

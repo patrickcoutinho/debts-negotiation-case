@@ -15,10 +15,20 @@ import { CheckIcon } from '@chakra-ui/icons';
 export type ModalProps = {
   title: string;
   text: JSX.Element | string;
+  button: string;
   openButton: string;
+  buttonAction: () => void;
+  buttonDisabled?: boolean;
 };
 
-const Modal: FC<ModalProps> = ({ title, text, openButton }) => {
+const Modal: FC<ModalProps> = ({
+  title,
+  text,
+  openButton,
+  button,
+  buttonDisabled = false,
+  buttonAction,
+}) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -38,8 +48,13 @@ const Modal: FC<ModalProps> = ({ title, text, openButton }) => {
             <Button variant="ghost" mr={3} onClick={onClose}>
               Fechar
             </Button>
-            <Button rightIcon={<CheckIcon />} ml={3}>
-              Selecionar Oferta
+            <Button
+              rightIcon={<CheckIcon />}
+              ml={3}
+              onClick={buttonAction}
+              disabled={buttonDisabled}
+            >
+              {button}
             </Button>
           </ModalFooter>
         </ModalContent>

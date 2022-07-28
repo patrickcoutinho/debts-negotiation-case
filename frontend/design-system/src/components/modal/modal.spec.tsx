@@ -19,7 +19,13 @@ const makeSubject = ({
   modalTitle = faker.word.verb(),
 }: SubjectProps): SubjectTypes => {
   const subject = render(
-    <Modal title={modalTitle} text="modal text" openButton={openButton} />
+    <Modal
+      title={modalTitle}
+      text="modal text"
+      openButton={openButton}
+      button="open"
+      buttonAction={jest.fn()}
+    />
   );
 
   return { subject };
