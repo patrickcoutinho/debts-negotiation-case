@@ -15,15 +15,32 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { InstallmentPlan } from '../../domain/models/offer';
 
 type CheckoutProps = {
   agreementService: Agreement;
 };
 
 const Checkout: FC<CheckoutProps> = ({ agreementService }) => {
+  const [selectedDate, setDate] = useState<Date | undefined>(undefined);
+  const [selectedPlan, setPlan] = useState<InstallmentPlan | undefined>(
+    undefined
+  );
   const [agreement, setAgreement] = useState<Agreement.Model | undefined>(
     undefined
   );
+
+  console.log('selectedPlan', selectedPlan);
+
+  const handleSelectDate = (e: any) => {
+    setDate(e.target.dataset.date);
+  };
+
+  const handleSelectPlan = (e: any) => {
+    console.log(e.target.dataset.plan);
+
+    setPlan(agreement?.installmentsPlan[e.target.dataset.plan]);
+  };
 
   useEffect(() => {
     (async () => {
@@ -82,10 +99,11 @@ const Checkout: FC<CheckoutProps> = ({ agreementService }) => {
                     <ListItem key={key}>
                       <Button
                         size="lg"
-                        variant={'outline'}
+                        variant={date == selectedDate ? undefined : 'outline'}
                         w={'100%'}
                         leftIcon={<CheckCircleIcon />}
-                        onClick={() => {}}
+                        onClick={handleSelectDate}
+                        data-date={date}
                       >
                         {date.toLocaleDateString('pt-BR')}
                       </Button>
@@ -101,13 +119,22 @@ const Checkout: FC<CheckoutProps> = ({ agreementService }) => {
                     <ListItem key={key}>
                       <Button
                         size="lg"
-                        variant={'outline'}
+                        variant={plan === selectedPlan ? undefined : 'outline'}
                         w={'100%'}
                         leftIcon={<CheckCircleIcon />}
-                        onClick={() => {}}
+                        onClick={handleSelectPlan}
+                        data-plan={key}
                       >
                         {plan.installments}x de R$ {plan.installmentValue}{' '}
-                        <Text color={'gray.500'} ml={3} fontWeight={400}>
+                        <Text
+                          color={plan === selectedPlan ? 'white' : 'gray.500'}
+                          ml={3}
+                          fontWeight={400}
+                          as={'span'}
+                          sx={{
+                            pointerEvents: 'none',
+                          }}
+                        >
                           Total R$ {plan.total} | {plan.discount}% de desconto
                         </Text>
                       </Button>
@@ -119,7 +146,12 @@ const Checkout: FC<CheckoutProps> = ({ agreementService }) => {
                   Declaro que li e aceito os{' '}
                   <Link color={'blue.400'}>Termos do Acordo</Link>
                 </Text>
-                <Button rightIcon={<CheckIcon />} ml={3} onClick={() => {}}>
+                <Button
+                  rightIcon={<CheckIcon />}
+                  ml={3}
+                  onClick={() => {}}
+                  disabled={!selectedDate || !selectedPlan}
+                >
                   Efetivar acordo
                 </Button>
               </Box>
