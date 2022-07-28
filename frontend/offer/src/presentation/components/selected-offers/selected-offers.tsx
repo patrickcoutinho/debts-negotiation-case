@@ -1,10 +1,12 @@
 import React from 'react';
-import { Box, ButtonGroup } from '@chakra-ui/react';
 import Button from 'design_system/Button';
 import { ArrowRightIcon } from '@chakra-ui/icons';
+import { Box, ButtonGroup } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
 import { useStore } from 'shell/store';
 
 const SelectedOffers = () => {
+  const navigate = useNavigate();
   const { length } = useStore();
 
   return (
@@ -26,6 +28,7 @@ const SelectedOffers = () => {
               m={0}
               colorScheme="teal"
               rightIcon={<ArrowRightIcon />}
+              onClick={() => navigate('/checkout')}
             >{`Prosseguir com ${length} oferta${
               length > 1 ? 's' : ''
             }`}</Button>

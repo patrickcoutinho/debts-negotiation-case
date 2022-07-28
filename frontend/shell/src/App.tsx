@@ -3,8 +3,8 @@ import Index from './pages';
 import Ofertas from './pages/ofertas';
 import RemoteFooter from 'design_system/Footer';
 import RemoteNavbar from 'design_system/Navbar';
-import { Routes, Route } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import CheckoutPage from './pages/checkout';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 
 const App: FC = () => {
   const navigate = useNavigate();
@@ -21,6 +21,7 @@ const App: FC = () => {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="ofertas" element={<Ofertas />} />
+        <Route path="checkout" element={<CheckoutPage />} />
       </Routes>
       <RemoteFooter />
     </>
