@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
+import AgreementSuccess from 'offer/AgreementSuccess';
+import CheckoutPage from './pages/checkout';
 import Index from './pages';
 import Ofertas from './pages/ofertas';
 import RemoteFooter from 'design_system/Footer';
 import RemoteNavbar from 'design_system/Navbar';
-import CheckoutPage from './pages/checkout';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 
 const App: FC = () => {
@@ -22,6 +23,7 @@ const App: FC = () => {
         <Route path="/" element={<Index />} />
         <Route path="ofertas" element={<Ofertas />} />
         <Route path="checkout" element={<CheckoutPage />} />
+        <Route path="sucesso" element={<AgreementSuccess />} />
       </Routes>
       <RemoteFooter />
     </>

@@ -11,3 +11,9 @@ declare module 'offer/Checkout' {
 
   export default Checkout;
 }
+
+declare module 'offer/AgreementSuccess' {
+  const AgreementSuccess: React.ComponentType;
+
+  export default AgreementSuccess;
+}

@@ -3,6 +3,8 @@ import Button from 'design_system/Button';
 import Page from 'design_system/Page';
 import { Agreement } from '../../domain/usecases/agreement';
 import { CheckCircleIcon, CheckIcon } from '@chakra-ui/icons';
+import { InstallmentPlan } from '../../domain/models/offer';
+import { useNavigate } from 'react-router-dom';
 import {
   Badge,
   Box,
@@ -15,7 +17,6 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { InstallmentPlan } from '../../domain/models/offer';
 
 type CheckoutProps = {
   agreementService: Agreement;
@@ -30,7 +31,7 @@ const Checkout: FC<CheckoutProps> = ({ agreementService }) => {
     undefined
   );
 
-  console.log('selectedPlan', selectedPlan);
+  const navigate = useNavigate();
 
   const handleSelectDate = (e: any) => {
     setDate(e.target.dataset.date);
@@ -149,7 +150,7 @@ const Checkout: FC<CheckoutProps> = ({ agreementService }) => {
                 <Button
                   rightIcon={<CheckIcon />}
                   ml={3}
-                  onClick={() => {}}
+                  onClick={() => navigate('/sucesso')}
                   disabled={!selectedDate || !selectedPlan}
                 >
                   Efetivar acordo
