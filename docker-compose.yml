@@ -66,6 +66,14 @@ services:
       - ${PWD}/shared/infra:/app
       - ${PWD}/tsconfig.json:/app/tsconfig.json
     privileged: true
+  mongodb:
+    build:
+      context: ./mongodb/
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    privileged: true
+    restart: always
 networks:
   case-net:
     driver: bridge
