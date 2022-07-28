@@ -32,7 +32,7 @@ const SelectedOffers = ({ agreementService }: SelectedOffersProps) => {
       backgroundColor={length ? 'teal' : 'lightgray'}
       color={length ? 'white' : 'black'}
       w="100%"
-      p={12}
+      p={6}
       textAlign={'center'}
     >
       {length ? (
