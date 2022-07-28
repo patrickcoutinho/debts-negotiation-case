@@ -38,7 +38,7 @@ services:
       - 3000:3000
     volumes:
       - ${PWD}/frontend/shell:/app
-      - ${PWD}/tsconfig.json:/app/tsconfig.base.json
+      - ${PWD}/tsconfig.json:/app/tsconfig.json
       - ${PWD}/jest.config.ts:/app/jest.config.ts
     privileged: true
   home:
