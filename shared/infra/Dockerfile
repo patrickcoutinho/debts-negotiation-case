@@ -9,7 +9,7 @@ RUN yarn global add concurrently
 
 COPY . .
 
-EXPOSE 8082
+EXPOSE 8083
 
 FROM base as prod
 
