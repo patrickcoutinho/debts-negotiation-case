@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "concurrently \"yarn start\" \"yarn serve\"",
+    "prod": "concurrently \"yarn build\" \"yarn serve\"",
     "start": "webpack --watch",
     "build": "webpack --mode production",
     "serve": "serve dist -p 8083",
