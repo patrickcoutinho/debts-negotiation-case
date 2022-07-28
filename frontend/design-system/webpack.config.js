@@ -65,6 +65,7 @@ module.exports = {
         offer: 'offer@http://localhost:8080/remoteEntry.js',
       },
       shared: {
+        ...deps,
         react: {
           requiredVersion: deps.react,
         },

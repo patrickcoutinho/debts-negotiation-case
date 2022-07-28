@@ -54,12 +54,14 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         './GetOffers': './src/presentation/get-offers/get-offers-factory.tsx',
+        './Checkout': './src/presentation/checkout/checkout.tsx',
       },
       remotes: {
         design_system: 'design_system@http://localhost:8081/remoteEntry.js',
         shell: 'shell@http://localhost:3000/remoteEntry.js',
       },
       shared: {
+        ...deps,
         react: {
           requiredVersion: deps.react,
         },

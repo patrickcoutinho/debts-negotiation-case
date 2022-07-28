@@ -60,6 +60,7 @@ module.exports = {
         './store': './src/store/index',
       },
       shared: {
+        ...deps,
         react: {
           requiredVersion: deps.react,
         },
