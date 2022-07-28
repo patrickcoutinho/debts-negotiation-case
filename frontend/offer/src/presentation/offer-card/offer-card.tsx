@@ -41,13 +41,10 @@ const OfferCard: FC<GetOffers.Model> = ({
 }) => {
   const { value: state, add } = useStore();
 
-  console.log('selected', state);
-
   const maxPlan = maxInstallments(installmentPlans);
   const maxPlanDiscount = maxDiscount(installmentPlans);
 
   const handleSelect = () => {
-    console.log('add', add);
     if (state[id]) {
       return;
     }
