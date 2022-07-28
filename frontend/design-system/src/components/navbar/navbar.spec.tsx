@@ -30,9 +30,11 @@ const makeSubject = ({
 
 describe('Navbar', () => {
   test('should render Navbar correctly', async () => {
+    const text = 'fixed text';
+
     const {
       subject: { container },
-    } = makeSubject({});
+    } = makeSubject({ text });
 
     expect(container).toMatchSnapshot();
     expect(await axe(container)).toHaveNoViolations();

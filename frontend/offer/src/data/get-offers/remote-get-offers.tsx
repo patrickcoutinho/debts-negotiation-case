@@ -11,7 +11,7 @@ export class RemoteGetOffers implements GetOffers {
   }
 
   public get = async (): Promise<GetOffers.Model[] | undefined> => {
-    return Promise.resolve(getOffersResponseMock);
+    // return Promise.resolve(getOffersResponseMock);
 
     try {
       const response = await this.httpClient.request({
