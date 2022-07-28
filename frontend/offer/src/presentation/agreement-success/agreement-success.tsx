@@ -8,12 +8,12 @@ const AgreementSuccess: FC = () => {
       <Box textAlign="center" py={10} px={6} mb={150}>
         <CheckCircleIcon boxSize={'50px'} color={'teal.500'} />
         <Heading as="h2" size="xl" mt={6} mb={2}>
-          Deu tudo certo!
+          Tudo certo!
         </Heading>
         <Text color={'gray.500'}>
-          Seu acordo foi efetivado! Você recebera um e-mail com os detalhes para
-          pagamento. Você também encontra os detalhes no menu Acordos. Muito
-          obrigado!
+          <strong>Seu acordo foi efetivado!</strong> Você recebera um e-mail com
+          os detalhes para pagamento. Você também encontra os detalhes no menu
+          Acordos. Muito obrigado!
         </Text>
       </Box>
     </Container>
