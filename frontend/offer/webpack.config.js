@@ -57,6 +57,7 @@ module.exports = {
       },
       remotes: {
         design_system: 'design_system@http://localhost:8081/remoteEntry.js',
+        shell: 'shell@http://localhost:3000/remoteEntry.js',
       },
       shared: {
         react: {
