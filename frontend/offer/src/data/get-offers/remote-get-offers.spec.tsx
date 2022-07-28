@@ -1,5 +1,5 @@
-import { DebtType, OfferModel } from '../../domain/models/offer';
-import { FetchHttpClientMock, HttpClient, HttpStatusCode } from '@shared/infra';
+import { DebtType } from '../../domain/models/offer';
+import { FetchHttpClientMock, HttpStatusCode } from 'shared_infra/infra';
 import { GetOffers } from '../../domain/usecases/get-offers';
 import { RemoteGetOffers } from './remote-get-offers';
 

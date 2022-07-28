@@ -1,6 +1,6 @@
 import { GetOffers } from '../../domain/usecases/get-offers';
 import { getOffersResponseMock } from '../../utils/api-mock';
-import { HttpClient } from '@shared/infra';
+import { HttpClient } from 'shared_infra/infra';
 
 export class RemoteGetOffers implements GetOffers {
   private httpClient: HttpClient;

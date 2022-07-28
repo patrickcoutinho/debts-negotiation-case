@@ -1,6 +1,6 @@
 import { Agreement } from '../../domain/usecases/agreement';
 import { agreementMock } from '../../utils/api-mock';
-import { HttpClient } from '@shared/infra';
+import { HttpClient } from 'shared_infra/infra';
 
 export class RemoteAgreement implements Agreement {
   private httpClient: HttpClient;

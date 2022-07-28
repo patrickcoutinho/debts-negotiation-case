@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import GetOffersPage from './get-offers';
 import SelectedOffers from '../components/selected-offers/selected-offers';
-import { FetchHttpClient } from '@shared/infra';
+import { FetchHttpClient } from 'shared_infra/infra';
 import { RemoteGetOffers } from '../../data/get-offers/remote-get-offers';
 import { RemoteAgreement } from '../../data/agreement/remote-agreement';
 
