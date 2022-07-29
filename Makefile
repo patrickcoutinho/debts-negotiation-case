@@ -7,6 +7,9 @@ start:
 start-docker: 
 	docker-compose up
 
+start-docker-mongodb: 
+	docker-compose up mongodb
+
 start-docker-clean: cleanup
 	docker-compose up
 
