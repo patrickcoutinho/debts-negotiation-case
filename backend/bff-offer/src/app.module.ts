@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 import { OffersModule } from './offers/offers.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost/offers'), OffersModule],
+  imports: [MongooseModule.forRoot(process.env.MONGO_URI), OffersModule],
   controllers: [AppController],
   providers: [AppService],
 })
