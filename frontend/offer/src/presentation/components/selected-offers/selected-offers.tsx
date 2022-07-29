@@ -34,6 +34,7 @@ const SelectedOffers = ({ agreementService }: SelectedOffersProps) => {
       w="100%"
       p={6}
       textAlign={'center'}
+      zIndex={'sticky'}
     >
       {length ? (
         <>

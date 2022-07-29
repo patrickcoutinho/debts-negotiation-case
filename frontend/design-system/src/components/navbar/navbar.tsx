@@ -99,7 +99,7 @@ export default function Navbar({ links }: NavbarProps) {
                   }
                 />
               </MenuButton>
-              <MenuList>
+              <MenuList zIndex={9999}>
                 <MenuItem>Minha Conta</MenuItem>
                 <MenuDivider />
                 <MenuItem>Sair</MenuItem>

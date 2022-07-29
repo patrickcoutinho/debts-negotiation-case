@@ -7,11 +7,12 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
+    "backend/*",
     "frontend/*",
     "shared/*"
   ],
   "scripts": {
-    "start": "concurrently \"yarn workspace shell dev\" \"yarn workspace offer dev\" \"yarn workspace @shared/infra dev\" \"yarn workspace home dev\" \"yarn workspace design-system dev\" \"yarn workspace design-system storybook\"",
+    "start": "concurrently \"make start-docker-mongodb\" \"yarn workspace bff-offer start:dev\" \"yarn workspace shell dev\" \"yarn workspace offer dev\" \"yarn workspace @shared/infra dev\" \"yarn workspace home dev\" \"yarn workspace design-system dev\" \"yarn workspace design-system storybook\"",
     "start:prod": "concurrently \"yarn workspace shell prod\" \"yarn workspace offer prod\" \"yarn workspace @shared/infra prod\" \"yarn workspace home prod\" \"yarn workspace design-system prod\"",
     "start:offer": "yarn workspace offer start",
     "start:design-system": "yarn workspace design-system start",

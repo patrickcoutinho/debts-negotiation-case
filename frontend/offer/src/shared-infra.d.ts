@@ -1,7 +1,7 @@
 /// <reference types="react" />
 
 declare module 'shared_infra/infra' {
-  export type HttpMethod = 'get' | 'post' | 'put' | 'delete';
+  export type HttpMethod = 'get' | 'post' | 'put' | 'patch' | 'delete';
 
   export enum HttpStatusCode {
     ok = 200,

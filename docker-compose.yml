@@ -1,6 +1,20 @@
 version: "3"
 
 services:
+  bff-offer:
+    build:
+      context: ./backend/bff-offer/
+      target: "base"
+    environment:
+      - MONGO_URI=mongodb://mongodb/offers
+    command: sh -c "yarn && yarn start:dev"
+    container_name: bff-offer
+    ports:
+      - 3001:3001
+    volumes:
+      - ${PWD}/backend/bff-offer:/app
+    privileged: true
+    restart: always
   design-system:
     build:
       context: ./frontend/design-system/
@@ -14,6 +28,7 @@ services:
       - ${PWD}/tsconfig.json:/app/tsconfig.json
       - ${PWD}/jest.config.ts:/app/jest.config.ts
     privileged: true
+    restart: always
   offer:
     build:
       context: ./frontend/offer/
@@ -28,6 +43,7 @@ services:
       - ${PWD}/jest.config.ts:/app/jest.config.ts
       - ${PWD}/../../shared/infra:/app/infra
     privileged: true
+    restart: always
   shell:
     build:
       context: ./frontend/shell/
@@ -41,6 +57,7 @@ services:
       - ${PWD}/tsconfig.json:/app/tsconfig.json
       - ${PWD}/jest.config.ts:/app/jest.config.ts
     privileged: true
+    restart: always
   home:
     build:
       context: ./frontend/home/
@@ -54,6 +71,7 @@ services:
       - ${PWD}/tsconfig.json:/app/tsconfig.json
       - ${PWD}/jest.config.ts:/app/jest.config.ts
     privileged: true
+    restart: always
   shared-infra:
     build:
       context: ./shared/infra/
@@ -66,6 +84,15 @@ services:
       - ${PWD}/shared/infra:/app
       - ${PWD}/tsconfig.json:/app/tsconfig.json
     privileged: true
+    restart: always
+  mongodb:
+    build:
+      context: ./mongodb/
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    privileged: true
+    restart: always
 networks:
   case-net:
     driver: bridge

@@ -72,8 +72,5 @@ module.exports = {
       template: './public/index.html',
       favicon: './public/favicon.svg',
     }),
-    new Dotenv({
-      systemvars: true,
-    }),
   ],
 };
