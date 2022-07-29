@@ -62,9 +62,9 @@ export default function Footer() {
         <Logo alt="DebtsFree" maxH={26} />
         <Stack direction={'row'} spacing={6}>
           <Link href={'#'}>Home</Link>
-          <Link href={'#'}>About</Link>
+          <Link href={'#'}>Sobre</Link>
           <Link href={'#'}>Blog</Link>
-          <Link href={'#'}>Contact</Link>
+          <Link href={'#'}>Contato</Link>
         </Stack>
       </Container>
 
@@ -82,7 +82,7 @@ export default function Footer() {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}
         >
-          <Text>© 2022 DebtsFree. All rights reserved</Text>
+          <Text>© 2022 DebtsFree</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />

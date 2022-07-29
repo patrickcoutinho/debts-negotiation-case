@@ -38,8 +38,6 @@ const Checkout: FC<CheckoutProps> = ({ agreementService }) => {
   };
 
   const handleSelectPlan = (e: any) => {
-    console.log(e.target.dataset.plan);
-
     setPlan(agreement?.installmentsPlan[e.target.dataset.plan]);
   };
 

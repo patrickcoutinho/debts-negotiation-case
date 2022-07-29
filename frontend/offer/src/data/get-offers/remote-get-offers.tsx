@@ -15,11 +15,13 @@ export class RemoteGetOffers implements GetOffers {
 
     try {
       const response = await this.httpClient.request({
-        url: this.api,
+        url: `${this.api}/offers`,
         method: 'get',
       });
 
-      return response.body || undefined;
+      return response.body
+        ? response.body.map((item: any) => ({ ...item, id: item._id }))
+        : undefined;
     } catch (error) {
       console.log(error);
     }
